@@ -1,0 +1,160 @@
+<!---Webinterface MAMA-Suchmaschine Programmierpraktikum WS2013/14--->
+<!---Letzte Aenderung: 201311127 1045--->
+<!---x--->
+<!DOCTYPE html>
+
+    
+<html>
+<meta charset=iso-8859-1>
+<head>
+<title>MAMA-Webinterface</title>
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<script type="text/javascript">
+
+function dateCheck()
+{
+	// alert("funktion");
+	var today = new Date();
+	var startDate = new Date(2013-05-31);
+	var vonDatum = document.getElementById("datefrom");
+	var fromDate = new Date(vonDatum);
+	var toDate = new Date(bisDatum);
+	//
+	if (dates.compare(startDate,fromDate)<0) <!--zulässiges Suchdatum 'von'?-->
+		{
+			"alert('Von-Datum nicht zulässig')";
+		}
+	if (dates.compare(fromDatum,toDate)>0)
+		{
+			"alert('Unzulässige Datumswahl')";
+		} 
+	
+	
+}
+
+function myF()
+{
+alert("Hello World!");
+}
+
+
+
+</script>
+<!--  -->
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+</head>
+<body>
+<!---
+
+  <p>1. Bitte wählen Sie Ihre Sprache aus:</p>
+  <p>
+    <td><input type="radio" name="Sprache" value="de" checked>  <img src="flagde.jpg"</td> Deutsch --->   <td><img src="mama_100px.jpg"/></td>
+<br>
+<!--<td><input type="radio" name="Sprache" value="en">  <img src="flaguk.jpg"</td> Englisch
+  </p>
+
+<p></p><br> -->
+
+<form ACTION="ViewControl">
+  <div>1. Geben Sie ein Thema an:</div>
+  <p>
+    <!--<select name="topics_de" size="5">-->
+	<select name="topic" multiple="multiple" size="5">
+      <option value="business">business</option>
+      <option value="career">career</option>
+      <option value="computer">computer</option>
+      <option value="culture">culture</option>
+      <option value="entertainent">entertainment</option>
+	  <option value="finance">finance</option>
+	  <option value="lifestyle">lifestyle</option>
+      <option value="mobility">mobility</option>
+      <option value="opinion">opinion</option>
+	  <option value="politics">politics</option>
+      <option value="science">science</option>
+      <option value="society">society</option>
+	  <option value="sport">sport</option>
+	  <option value="sports">sports</option>
+	  <option value="study">study</option>
+	  <option value="technology">technology</option>
+      <option value="travel">travel</option>
+    </select>
+  </p>
+<p></p><br>
+
+<!---x
+<form action="select.htm">
+  <p>
+    <select name="topics_en" size="5">
+      <option>business</option>
+      x <option>entertainment</option>
+	  <option>politics</option>
+      <option>science</option>
+      <option>sport</option>
+	  x <option>sports</option>
+	  <option>technology</option>
+      
+    </select>
+  </p>
+</form>
+<p></p><br>
+--->
+
+  2. Ja und woher?:
+  <p>
+    <!--<select name="sources_de" size="5">-->
+	<select name="source" multiple="multiple" size="5">
+      <option value="MainNetz">MainNetz</option>
+      <option value="SpiegelOnline">SpiegelOnline</option>
+      <option value="ZeitOnline">ZeitOnline</option>
+	  <option value="CNN">CNN</option>
+      <option value="WashingtonPost">WashingtonPost</option>
+    </select>
+  </p>
+<p></p><br>
+
+<!--
+<form action="select.htm">
+  <p>
+    <select name="sources_us" size="5">
+      <option>CNN</option>
+      <option>WashingtonPost</option>     
+    </select>
+  </p>
+</form>
+<p></p><br> -->
+
+<!--Datumsintervall-->
+3. Aus welchem Zeitraum (aber frühestens ab 31.05.2013):<br><p></p>
+von:                                                  
+<input type="date" name="datefrom" value="2013-05-31" min="2013-05-31"> bis:<input type="date" name="dateto" value="jjjj-mm-tt"><br>
+<p></p><br>
+<!-- input Element vom Typ search -->
+4. Freitextsuche gefällig? Muss aber nicht sein:<br><p></p>
+<input type="search" name="search" maxLength=250 size=75>
+<p></p><br>
+<p></p><br>
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<!--Button-->
+5. Und weg damit:<br><p></p>
+<button type="button" onclick="myF()">Try it22</button>
+<button type="button" onclick="dateCheck()">Try date</button>
+<button type="button" onclick="alert('Ab zum Server!')">FEUER!</button>
+<INPUT TYPE="SUBMIT"> 
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--->
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+
+<button type="button" onclick="alert('Viel Spass beim Suchen wünscht das MAMA-Team                   Martina, Alex, Martin & Alex   :-)')">Credits</button>
+</form>
+</body>
+</html>
+
+
+
+

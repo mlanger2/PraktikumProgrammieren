@@ -1,0 +1,28 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Calibri;
+	text-shadow: black 3px 2px 4px;
+	letter-spacing: 0.2em /*background-image: url(ttt2.jpg);*/
+}
+
+#section {
+	background-color: #DDDDDD;
+	height: auto;
+	margin-left: 200px;
+	margin-right: 400px;
+	padding-left: 2em;
+	font-size: 1em;
+}
+
+#steuerunglinks {
+	width: 200px;
+	float: left;
+	margin: 0;
+	text-align: center;
+}
+
+#steuerungrechts {
+	width: 400px;
+	float: right;
+}

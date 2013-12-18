@@ -1,0 +1,133 @@
+<!---Webinterface MAMA-Suchmaschine Programmierpraktikum WS2013/14--->
+<!---Letzte Aenderung: 201311127 1045--->
+<!---x--->
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>MAMA-Suchmaschine</title>
+<meta name="description"
+	content="160 Zeichen zum Beschreiben des Inhalts">
+<link href="blankpage.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<div id="Textbild">
+		<p>
+		<figure>
+			<img src="Text.png" width="1500" height="150">
+		</figure>
+
+	</div>
+
+
+	<nav id="steuerunglinks">
+
+		<img src="ttt2.jpg" width="200" height=auto>
+
+	</nav>
+
+	<nav id="steuerungrechts">
+
+
+		<img src="MAMA.png" width="350" height="250">
+
+
+	</nav>
+
+
+
+	<section id=section>
+
+		<form ACTION="ViewControl">
+
+
+			<div id="Thema">
+				Bitte w&aumlhlen Sie ein Thema aus:
+				<p>
+				<p>
+				<p>
+					<select name="topic" multiple="multiple" size="5">
+						<option>business</option>
+						<option>career</option>
+						<option>computer</option>
+						<option>culture</option>
+						<option>entertainment</option>
+						<option>finance</option>
+						<option>lifestyle</option>
+						<option>mobility</option>
+						<option>opinion</option>
+						<option>politics</option>
+						<option>science</option>
+						<option>society</option>
+						<option>sport</option>
+						<option>sports</option>
+						<option>study</option>
+						<option>technology</option>
+						<option>travel</option>
+					</select>
+			</div>
+
+
+
+
+			<div id="Quellen">
+				Bitte w&aumlhlen Sie eine Quelle aus:
+				<p>
+				<p>
+				<p>
+					<select name="source" multiple="multiple" size="5">
+						<option>MainNetz</option>
+						<option>SpiegelOnline</option>
+						<option>ZeitOnline</option>
+						<option>CNN</option>
+						<option>WashingtonPost</option>
+					</select>
+			</div>
+			<br>
+
+			<div id="Zeitraum">
+				Bitte Zeitraum w&aumlhlen (aber fr&uumlhlenhestens ab 31.05.2013):
+				<p>
+				<p>
+				<p>
+					von: <input type="date" name="datefrom" value="2013-05-31"
+						min="2013-05-31"> bis: <input type="date" name="dateto"
+						value="jjjj-mm-tt"><br>
+			</div>
+
+			<div>
+				<input type="hidden" size="45" name="datetype"
+					style="background-color: red; color: white; border: 0px;"
+					value="Fehler! Bitte geben Sie ein korrektes Datum ein."><br>
+			</div>
+
+			<div id="Freitext">
+				Freitextsuche
+				<p>
+				<p>
+				<p>
+					<input type="search" name="search" maxLength=250 size=75>
+			</div>
+			<br>
+			<br> <INPUT TYPE="SUBMIT" value="Abschicken"> <INPUT
+				TYPE="RESET" value="Zurücksetzen"> <br>
+			<br> <input type="hidden" name="pagetype" value="0">
+
+		</form>
+
+	</section>
+
+
+
+</body>
+</html>
+
+
+
